@@ -4,7 +4,6 @@ let audiogo = new Audio("gameover.mp3");
 let audio = new Audio("music.mp3");
 // setTimeout(() => {
 // }, 1000);
-
 document.onkeydown = function (e) {
   audio.play();
   if (e.key == "Enter") {
@@ -80,5 +79,5 @@ setInterval(() => {
   }
 }, 400);
 function updateScore(score) {
-  document.querySelector("#score").innerHTML = "Your Score: " + score;
+  document.querySelector("#score").innerHTML = "Your Score: " + score;;
 }
